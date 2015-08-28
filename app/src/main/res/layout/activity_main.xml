@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/main_bg"
+              android:orientation="vertical"
+              tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weekly Routine"
+        android:id="@+id/routine"
+        android:layout_gravity="center_horizontal"/>
+
+       <ScrollView
+           android:layout_width="fill_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:id="@+id/LinearAdd"
+               android:gravity="center"
+               android:padding="10dp"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:orientation="vertical" >
+
+
+               <Button
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Saturday"
+                   android:id="@+id/saturday"
+                   android:background="@drawable/custom_bg_22"
+                   android:layout_alignParentTop="true"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="20dp"/>
+               <Button
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Sunday"
+                   android:background="@drawable/custom_bg_2"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/sunday"
+                   android:layout_below="@+id/saturday"
+                   android:layout_alignLeft="@+id/saturday"
+                   android:layout_alignStart="@+id/saturday"/>
+               <Button
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Monday"
+                   android:background="@drawable/custom_bg_22"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/monday"
+                   android:layout_below="@+id/sunday"
+                   android:layout_centerHorizontal="true"/>
+               <Button
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Tuesday"
+                   android:background="@drawable/custom_bg_2"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/tuesday"
+                   android:layout_below="@+id/monday"
+                   android:layout_centerHorizontal="true"/>
+               <Button
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Wednesday"
+                   android:background="@drawable/custom_bg_22"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/wednesday"
+                   android:layout_below="@+id/tuesday"
+                   android:layout_centerHorizontal="true"/>
+               <Button
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Thursday"
+                   android:background="@drawable/custom_bg_2"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/thursday"
+                   android:layout_below="@+id/wednesday"
+                   android:layout_centerHorizontal="true"/>
+               <Button
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Play"
+                   android:background="@drawable/custom_bg_22"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="20dp"
+                   android:id="@+id/song"
+                   android:layout_below="@+id/thursday"
+                   android:layout_centerHorizontal="true"/>
+           </LinearLayout>
+       </ScrollView>
+
+</LinearLayout>
