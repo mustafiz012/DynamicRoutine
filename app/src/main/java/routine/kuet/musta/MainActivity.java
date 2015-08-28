@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
@@ -58,7 +59,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 		else if (v == thursday)
 			startActivity(new Intent(this, Thursday.class));
 		else if(v == play){
-
+			Toast.makeText(MainActivity.this, "This will play my favourite song!!", Toast.LENGTH_SHORT).show();
 		}
 	}
 }
