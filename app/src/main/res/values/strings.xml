@@ -27,5 +27,6 @@
     <color name="red6">#A00000</color>
     <color name="red7">#A80000</color>
     <color name="deepR">#990066</color>
+    <string name="title_activity_music">Music</string>
 
 </resources>

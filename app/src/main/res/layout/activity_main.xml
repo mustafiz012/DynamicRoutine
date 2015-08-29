@@ -84,16 +84,32 @@
                    android:id="@+id/thursday"
                    android:layout_below="@+id/wednesday"
                    android:layout_centerHorizontal="true"/>
-               <Button
-                   android:layout_width="fill_parent"
-                   android:layout_height="wrap_content"
-                   android:text="Play"
-                   android:background="@drawable/custom_bg_22"
-                   android:layout_marginTop="10dp"
-                   android:layout_marginBottom="20dp"
-                   android:id="@+id/song"
-                   android:layout_below="@+id/thursday"
-                   android:layout_centerHorizontal="true"/>
+               <LinearLayout android:layout_width="fill_parent"
+                             android:orientation="horizontal"
+                             android:weightSum="100"
+                             android:layout_marginTop="10dp"
+                             android:layout_height="wrap_content">
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Play"
+                       android:layout_weight="50"
+                       android:background="@drawable/custom_bg_22"
+                       android:id="@+id/songStart"
+                       android:layout_alignParentTop="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_alignParentStart="true"/>
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Stop"
+                       android:layout_weight="50"
+                       android:background="@drawable/custom_bg_22"
+                       android:id="@+id/songStop"
+                       android:layout_alignParentTop="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true"/>
+               </LinearLayout>
            </LinearLayout>
        </ScrollView>
 

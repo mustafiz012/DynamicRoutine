@@ -47,6 +47,12 @@
             android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_thursday" >
         </activity>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>
